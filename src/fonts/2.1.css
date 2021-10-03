@@ -1,0 +1,18 @@
+body{font-family: TimesNewRoman;}
+h1{
+font-family:Verdana;
+font-size: 32pt;
+font-weight: normal;
+text-align: center;
+}
+
+p{
+font-size: 12pt !important;
+text-align: justify;
+}
+
+.picture{text-align: center;}
+
+p.greeting{font-size: 24pt;}
+
+.picture img {width: 40%;}
