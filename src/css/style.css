@@ -1,0 +1,130 @@
+body{
+	font-family: Arial, sans-serif;
+}
+
+nav{
+	width: 100%;
+	height: 60px;
+	background:rgba(42, 154, 235, 1);
+	padding-left: 5px;
+}
+
+.logo{
+	color:yellow;
+	font-size: 15px;
+	line-height: 60px;
+	background: url("https://центр.ответпсихолога.рф/images/12.png") left no-repeat;
+	padding-left: 65px;
+	float:left;
+	margin-right: 50px;
+}
+
+.menu{
+	float:left;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.menu li{
+	float: left;
+	line-height: 60px;
+	color:yellow;
+	margin-right: 15px;
+	text-transform: uppercase;
+}
+
+.main{
+	width: 100%;
+	height:100%;
+	background:  url("../img/bgleto1.jpg") center/cover no-repeat;
+}
+
+.title_conteiner{
+	float: left;
+	margin: 162px 0px 0px 354px;
+	color: rgba(42, 154, 235, 1);
+	text-align: center;
+}
+
+.title_conteiner h1{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.title_conteiner h4{
+	margin-top: 20px;
+	font-size: 28px;
+	color: #79818d;	
+}
+
+.title_conteiner input{
+	height:40px;
+	text-align: center;
+	border:2px solid #79818d;
+	background: none;
+	border-radius: 5px;
+	color: #79818d;
+	padding:0px 10px;
+	margin:10px 6px 0px 6px;
+	font-weight: bold;
+}
+
+.inform{
+	color:#263244;
+	text-align: center;
+	margin-top: 80px;
+	text-transform: uppercase;
+}
+
+.inform h3{
+	font-size: 30px;
+}
+
+.inform span{
+	margin-right: 40px;
+}
+
+.inform input{
+	height:40px;
+	text-align: center;
+	border:2px solid #79818d;
+	background: url(../img/read.jpg) no-repeat;
+	border-radius: 5px;
+	color: #79818d;
+	padding: 0px 40px 0px 60px;
+	margin: 10px 6px 0px 6px;
+	font-weight: bold;
+}
+
+.yslg{
+	/*justify-content: space-between;
+	display: flex;*/
+	margin-top: 80px;
+	color:#263244;
+}
+
+/*.yslg img{
+	height: 150%;
+	width: 150%;
+}*/
+
+.yslg h2{
+	font-size: 30px;
+	text-align: center;
+}
+
+.yslg div{
+
+}
+
+.yslg2{
+	justify-content: space-between;
+	display: flex;
+	margin: 60px 220px;
+	width: 200px;
+	height: 150px;
+}
+
+.predl{
+	margin-top: 130px;
+}

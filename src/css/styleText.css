@@ -1,0 +1,13 @@
+p{
+	font-family: Arial, "Hevelvetica Neue", Hevelvetica, sans-serif;
+	font-size: 25px;
+	text-align: justify;
+	text-decoration: none;
+	text-shadow: 1px 10px 10px #000;
+	text-transform: none;
+	/*text-indent: 50px;*/
+	letter-spacing: 0.2px;
+	/*line-height: 50px;*/
+	white-space: normal;
+	/*word-spacing: 20px;*/
+}

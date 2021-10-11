@@ -1,0 +1,49 @@
+.example_block{
+	height: 400px;
+	box-shadow: 2px 2px 10px #000;
+	margin:30px;
+	overflow: scroll;
+/*background: url(../img/fon/Big_Tree.jpg) 50% 50%/800px auto no-repeat local, url(../img/fon/derevo1.jpg) left/100px auto repeat local;*/
+
+
+
+/*24^45*/
+	/*background: url(../img/fon/Big_Tree.jpg);
+	background-repeat:no-repeat;
+	background-attachment: local;
+	background-size: contain;*/
+
+
+
+	/*background-position: center;*/
+	/*background-position: 10px 50px;*/
+/*	background-position: 5% 50%;*/
+
+
+	/*бесшовные структуры*/
+
+
+	/*background-color: #1742f1;
+	background-color: rgb(255,161,44);
+	background-color: rgba(255,161,44,0.4);*/
+	/*http://hex2rgba.devoth.com/ - converter*/
+	/*background-image: linear-gradient(to bottom, rgba(236,232,157,1) 0%, rgba(94,83,115,1) 50%, rgba(24,181,164,1) 100%);*/
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+	/*https://www.colorzilla.com/gradient-editor/*/
+	/*background: rgb(254,252,234); /* Old browsers */
+	/*background: -moz-linear-gradient(45deg,  rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6-15 */
+	/*background: -webkit-linear-gradient(45deg,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	/*background: linear-gradient(45deg,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.list{
+	margin:30px;
+	padding: 10px 0px 10px 0px;
+	font-size: 20px;
+}
+
+.list>li{
+	background: url("../img/arrow.jpg") no-repeat left/auto 70%;
+	padding-left: 15px;
+}
