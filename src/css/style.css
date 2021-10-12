@@ -9,6 +9,17 @@ nav{
 	padding-left: 5px;
 }
 
+body input:hover{
+  opacity: 1;
+  background-color: #00EEE0;
+  border: 1px #99ccff solid;
+}
+
+body input:active{
+  background-color: #00CCC0;
+  border: 1px #000000 solid;
+}
+
 .logo{
 	color:yellow;
 	font-size: 15px;
@@ -97,34 +108,216 @@ nav{
 }
 
 .yslg{
-	/*justify-content: space-between;
-	display: flex;*/
+	margin-left: 60px;
 	margin-top: 80px;
 	color:#263244;
 }
-
-/*.yslg img{
-	height: 150%;
-	width: 150%;
-}*/
 
 .yslg h2{
 	font-size: 30px;
 	text-align: center;
 }
 
-.yslg div{
-
-}
-
-.yslg2{
-	justify-content: space-between;
-	display: flex;
-	margin: 60px 220px;
+.yslg2 div{
+	float: left;
+	margin: 25px 40px;
 	width: 200px;
 	height: 150px;
 }
 
-.predl{
-	margin-top: 130px;
+.polosa{
+	margin:20px 0px 30px 600px;
+	height: 5px;
+	width: 90px;
+	border-bottom: 4px solid orange;
+}
+
+.predl img{
+	margin-left: 80px;
+}
+
+.predl h2{
+	text-align: center;
+	font-size: 30px;
+	color: #263244;
+	margin-top: 480px;
+	text-transform: uppercase;
+}
+
+.predl2{
+	float: left;
+	margin: 0px 0px 0px 80px;
+	/*display: inline-block;*/
+	width: 200px;
+}
+
+.predl2 h3{
+	margin-top: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color:#384354;
+}
+
+.predl2 p{
+	font-size: 17px;
+	margin-top: 10px;
+	color:#636a76;
+}
+
+.predl2 a{
+	font-size: 17px;
+	color: #636a76;
+}
+
+.predl input{
+	height:40px;
+	text-align: center;
+	border:2px solid #63b5ae;
+	background: #63b5ae;
+	border-radius: 5px;
+	color: white;
+	padding:0px 10px;
+	margin-top:10px;
+	font-weight: bold;
+}
+
+.cost h2{
+	margin: 350px 0px 40px 0px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.cost h3{
+	font-size: 20px;
+	margin: 0px 0px 22px 300px;
+	text-transform: uppercase;
+}
+
+.cost select{
+	width: 650px;
+	font-size: 16px;
+	margin: 0px 0px 35px 300px;
+	padding: 9px 10px 10px 14px;
+	background: #eeeeee;
+	border:1px solid #263244;
+	color:#263244;
+}
+
+.cost p{
+	font-size: 18px;
+	margin: 0px 0px 12px 300px;
+}
+
+.cost2{
+	display: inline-block;
+	width: 630px;
+}
+
+.stat{
+	height: 600px;
+	margin-top: 80px;
+	background: url("https://phonoteka.org/uploads/posts/2021-05/1620186403_17-phonoteka_org-p-fon-dlya-statistiki-19.jpg") no-repeat;
+	background-size: 100%;
+
+}
+
+.stat h3{
+	padding-top: 130px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color:#263244;
+	text-align: center;
+}
+
+.statpic{
+	float:left;
+	margin: 50px 80px 20px 80px;
+	width: 150px;
+	/*display: inline-block;*/
+	text-align: center;
+}
+
+.statpic p{
+	text-transform: uppercase;
+	color: #263244;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+.otzv h3{
+	margin-top:80px; 
+	text-align: center;
+	font-size: 30px;
+	color: #263244;
+}
+
+.otzv p{
+	text-align: center;
+	color: #263244;
+	margin: 20px 300px;
+	font-size: 17px;
+}
+
+.name{
+	text-align: center;
+	color: #263244;
+	margin: 20px 0px 20px 530px;
+	font-weight: 600;
+}
+
+.otzv img{
+	display:block;
+	margin:auto;
+}
+
+.contact{
+	height: 1200px;
+	background: url("https://www.wallpaperflare.com/static/908/261/65/lines-strokes-blue-background-wallpaper.jpg");
+	text-align: center;
+	color:white;
+}
+
+.contact h3{
+	margin-top: 80px;
+	padding-top: 55px;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.contact p{
+	font-size: 17px;
+}
+
+.contactpic{
+	float:left;
+	margin: 50px 80px 20px 140px;
+	width: 200px;
+}
+
+.contactpic img{
+	margin: 30px 0px 30px 0px;
+}
+
+.contact input{
+	font-size: 16px;
+	margin: 10px 0px 10px 0px;
+	padding: 9px 10px 10px 14px;
+	background: #eeeeee;
+	border:1px solid #263244;
+	color:#263244;
+}
+
+#gc{
+	margin-top: 30px;
+	width: 80%;
+	height: 350px;
+}
+
+#taxtar1{
+	margin-right: 5px;
+}
+
+.copyright{
+	margin-top: 30px;
 }
