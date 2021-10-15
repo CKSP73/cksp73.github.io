@@ -239,18 +239,6 @@ main{
 	color: #636a76;
 }
 
-.predl input{
-	height:40px;
-	text-align: center;
-	border:2px solid #63b5ae;
-	background: #63b5ae;
-	border-radius: 5px;
-	color: white;
-	padding:0px 10px;
-	margin-top:10px;
-	font-weight: bold;
-}
-
 .cost h2{
 	margin: 350px 0px 40px 0px;
 	font-size: 30px;
@@ -379,6 +367,7 @@ main{
 	background: url("https://www.wallpaperflare.com/static/908/261/65/lines-strokes-blue-background-wallpaper.jpg");
 	text-align: center;
 	color:white;
+
 }
 
 .contact h3{
@@ -387,6 +376,9 @@ main{
 	font-size: 40px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+}
+.contact h3:hover{
+	animation:comming 2s ease;
 }
 
 .contact p{
@@ -513,4 +505,57 @@ main{
 		margin-left: 354px;
 	}
 
+}
+
+.inform input{
+	transition:all 0.2s;
+	transform:scale(1);
+}
+
+.inform input:hover{
+	background-color: rgba(42, 154, 235, 1);
+	color:white;
+}
+.inform input:active{
+	transition:all 0.2s;
+	transform:scale(1.1);
+}
+
+.predl input{
+	height:40px;
+	text-align: center;
+	border:2px solid #63b5ae;
+	border-radius: 5px;
+	color: #63b5ae;
+	padding:0px 10px;
+	margin-top:10px;
+	font-weight: bold;
+	transition:all 0.2s;
+	transform: scale(1);
+}
+
+.predl input:hover{
+	background-color: rgba(42, 154, 235, 1);
+	color: white;
+}
+
+.predl input:active{
+	transition: all 0.2s;
+	transform: scale(1.1);
+}
+
+.contact input[type=submit]{
+	color:rgba(42, 154, 235, 1);
+	transition:all 0.2s;
+	transform: scale(1);
+}
+
+.contact input:hover[type=submit]{
+	background-color: rgba(42, 154, 235, 1);
+	color: white;
+}
+
+.contact input:active[type=submit]{
+	transition:all 0.2s;
+	transform: scale(1.1);
 }
