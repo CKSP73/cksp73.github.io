@@ -1,3 +1,73 @@
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 body{
 	font-family: Arial, sans-serif;
 }
@@ -7,17 +77,7 @@ nav{
 	height: 60px;
 	background:rgba(42, 154, 235, 1);
 	padding-left: 5px;
-}
-
-body input:hover{
-  opacity: 1;
-  background-color: #00EEE0;
-  border: 1px #99ccff solid;
-}
-
-body input:active{
-  background-color: #00CCC0;
-  border: 1px #000000 solid;
+	position:fixed;
 }
 
 .logo{
@@ -28,8 +88,13 @@ body input:active{
 	padding-left: 65px;
 	float:left;
 	margin-right: 50px;
+	animation:comming 2s ease;
 }
 
+main{
+	width: 100%;
+	height: 100%;
+}
 .menu{
 	float:left;
 	font-weight: bold;
@@ -42,6 +107,8 @@ body input:active{
 	color:yellow;
 	margin-right: 15px;
 	text-transform: uppercase;
+	animation:topshift 0.4s ease forwards;
+	opacity: 0;
 }
 
 .main{
@@ -55,6 +122,9 @@ body input:active{
 	margin: 162px 0px 0px 354px;
 	color: rgba(42, 154, 235, 1);
 	text-align: center;
+	opacity: 0;
+	animation:titlemove 1s ease forwards;
+	animation-delay:2.4s;
 }
 
 .title_conteiner h1{
@@ -216,9 +286,9 @@ body input:active{
 .stat{
 	height: 600px;
 	margin-top: 80px;
-	background: url("https://phonoteka.org/uploads/posts/2021-05/1620186403_17-phonoteka_org-p-fon-dlya-statistiki-19.jpg") no-repeat;
-	background-size: 100%;
-
+	/*background: url("https://phonoteka.org/uploads/posts/2021-05/1620186403_17-phonoteka_org-p-fon-dlya-statistiki-19.jpg") no-repeat;*/
+/*	background-size: 100%;
+*/
 }
 
 .stat h3{
@@ -229,11 +299,41 @@ body input:active{
 	text-align: center;
 }
 
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+/* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    /*left: 50%;*/
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
+  }
+
 .statpic{
 	float:left;
-	margin: 50px 80px 20px 80px;
+	margin: 450px 80px 20px 80px;
 	width: 150px;
-	/*display: inline-block;*/
+	display: inline-block;
 	text-align: center;
 }
 
@@ -241,7 +341,11 @@ body input:active{
 	text-transform: uppercase;
 	color: #263244;
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 800px;
+}
+
+.otzv{
+	margin-top: 500px;
 }
 
 .otzv h3{
@@ -320,4 +424,93 @@ body input:active{
 
 .copyright{
 	margin-top: 30px;
+}
+
+.menu li a{
+	transition:all 0.1s;
+	display: inline-block;
+	transform:scale(1);
+}
+
+.menu li a:visited{
+	color:white;
+}
+
+.menu li a:hover{
+	color:yellow;
+	
+}
+
+.menu li a:active{
+	transform:scale(1.1);
+}
+
+.title_conteiner input{
+	transition:all 0.2s;
+	transform: scale(1);
+}
+
+.title_conteiner input:hover{
+	background-color: rgba(42, 154, 235, 1);
+	color:white;
+}
+
+.title_conteiner input:active{
+	transition:all 0.2s;
+	transform:scale(1.1);
+}
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes topshift{
+	from{
+		opacity: 0;
+		margin-top:-80px;
+
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+	animation-delay: 2.0s;
+}
+
+@keyframes titlemove{
+	from{
+		opacity: 0;
+		margin-left:-500px;
+
+	}
+	to{
+		opacity: 1;
+		margin-left: 354px;
+	}
+
 }
