@@ -16,27 +16,30 @@
 		<nav>
 			<div class="logo">Центр коррекционной и семейной психологии</div>	
 			<div class="menu"> <ul>
-				<li>Главная</li>
-				<li>Услуги и цены</li>
-				<li>О центре</li>
-				<li>Полезные ресурсы</li>
-				<li>Контакты</li>
-				<li>Записаться</li>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Услуги и цены</a></li>
+				<li><a href="#">О центре</a></li>
+				<li><a href="#">Полезные ресурсы</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Записаться</a></li>
 			</ul></div>
 		</nav>
 	</header>
-	<div class="main">
+	<main>
+	<section class="main">
 		<div class="title_conteiner">
 			<h1> Психологическая помощь 
 			взрослым <br> и детям </h1>
 			<h4>Консультирование и коррекция при любом <br>
 			уровне сложности психологических <br>
 			проблем</h4>
-			<input type="submit" value="Записаться на консультацию" name="">
-			<input type="submit" value="О центре" name="">
+			<input type="button" value="Записаться на консультацию" name="">
+			<input type="button" value="О центре" name="">
 		</div>
-	</div>
-	<div class="inform">
+	</section>
+
+
+	<section class="inform">
 		<h3> наши Специалисты</h3>
 		<div class="polosa"> </div>
 		<img src="img/specFoto1.bmp">
@@ -52,9 +55,9 @@
 			<span> Платонов Михаил Анатольевич </span> 
 		</h5>
 	
-	<input type="submit" value="Узнать больше" name="">
-	</div>
-	<div class="yslg">
+		<input type="submit" value="Узнать больше" name="">
+	</section>
+	<section class="yslg">
 		<h2>Наши услуги</h2>
 		<div class="polosa"> </div>
 			<div class="yslg2">
@@ -93,8 +96,8 @@
 					<p>родовые травмы</p>
 				</div>
 			</div>
-	</div>
-	<div class="predl">
+	</section>
+	<section class="predl">
 		<h2>Мы гарантируем</h2>
 		<div class="polosa"> </div>
 		<img src="img/predl.bmp">
@@ -110,80 +113,93 @@
 			<h3>Название проекта</h3>
 			<p>ОВЗ и безопасное взросление</p>
 		</div>
-	</div>
-	<div class="cost">
+	</section>
+	<section class="cost">
 		<h2>Расчет стоимости</h2>
 		<h3>Тип услуги </h3>
-		<select name="list1" id="list1" >
-			<option disabled selected="">Выберите пункт...</option>
-			<option value="Opt1">Взрослая консультация</option>
-			<option value="Opt2">Консультация семейная</option>
-			<option value="Opt3">Консультация по ребенку</option>
-			<option value="Opt4">Личностый рост</option>
-		</select>
+		<form class="CostForm">
+			<select name="list1" id="list1" >
+				<option disabled selected="">Выберите пункт...</option>
+				<option value="Opt1">Взрослая консультация</option>
+				<option value="Opt2">Консультация семейная</option>
+				<option value="Opt3">Консультация по ребенку</option>
+				<option value="Opt4">Личностый рост</option>
+			</select>
+			
+			<h3>Количество человек</h3>
+			<select name="list2" id="list2">
+				<option disabled selected="">Выберите пункт...</option>
+				<option value="Opt1">1</option> 
+				<option value="Opt2">2</option>
+				<option value="Opt3">3</option>
+				<option value="Opt4">4</option>
+			</select>
 		
-		<h3>Количество человек</h3>
-		<select name="list2" id="list2">
-			<option disabled selected="">Выберите пункт...</option>
-			<option value="Opt1">1</option>
-			<option value="Opt2">2</option>
-			<option value="Opt3">3</option>
-			<option value="Opt4">4</option>
-		</select>
-	
-		<h3> Время</h3>
-		<select name="list3" id="list3">
-			<option id="start" disabled selected="">Выберите пункт...</option>
-			<option value="Opt1">Утреннее</option>
-			<option value="Opt2">Вечернее</option>
-			<option value="Opt3">Субботнее</option>
-			<option value="Opt4">Ночное</option>
-		</select>
-		<div class="cost2"> 
-			<p>Сроки</p>
-			<p>Стоимость</p>
-		</div>
-		<div class="cost2">
-			<p>0</p>
-			<p>0</p>
-		</div>
+			<h3> Время</h3>
+			<select name="list3" id="list3">
+				<option id="start" disabled selected="">Выберите пункт...</option>
+				<option value="Opt1">Утреннее</option>
+				<option value="Opt2">Вечернее</option>
+				<option value="Opt3">Субботнее</option>
+				<option value="Opt4">Ночное</option>
+			</select>
+			<div class="cost2"> 
+				<p>Сроки</p>
+				<p>Стоимость</p>
+			</div>
+			<div class="cost2">
+				<p>0</p>
+				<p>0</p>
+			</div>
+		</form>
 		
-	</div>
-	<div class="stat">
+	</section>
+	<section class="stat">
 		<h3>Немного статистики</h3>
-		<div class="polosa"> </div>
-		<div class="statpic" > 
-			<img src="img/smile.png">
-			<h3> >1000</h3>
-			<p>Счастливых клиентов</p>
+		<div class="polosa"> </div>	
+		<div class="parallax">
+		    <div class="parallax__layer parallax__layer--back">
+		     	<div class="title"><img src="https://phonoteka.org/uploads/posts/2021-05/1620186403_17-phonoteka_org-p-fon-dlya-statistiki-19.jpg"></div>
+		    </div>
+		    <div class="parallax__layer parallax__layer--base">
+		    	<!-- <div class="title">  -->
+			     	 	<div class="statpic" > 
+							<img src="img/smile.png">
+							<h3> >1000</h3>
+							<p>Счастливых клиентов</p>
+						</div>
+						<div class="statpic" > 
+							<img src="img/bm.png">
+							<h3>>55 000</h3>
+							<p>часов работы</p>
+						</div>
+						<div class="statpic" > 
+							<img src="img/galka.png">
+							<h3>15</h3>
+							<p>Проектов создано</p>
+						</div>
+						<div class="statpic" > 
+							<img src="img/kybok.png">
+							<h3>7</h3>
+							<p>наград получено</p>
+						</div>
+				<!-- </div> -->
+		    </div>
 		</div>
-		<div class="statpic" > 
-			<img src="img/bm.png">
-			<h3>>55 000</h3>
-			<p>часов работы</p>
-		</div>
-		<div class="statpic" > 
-			<img src="img/galka.png">
-			<h3>15</h3>
-			<p>Проектов создано</p>
-		</div>
-		<div class="statpic" > 
-			<img src="img/kybok.png">
-			<h3>7</h3>
-			<p>наград получено</p>
-		</div>
-	</div>
 
-	<div class="otzv">
+		
+		
+	</section>
+
+	<section class="otzv">
 		<h3>Отзывы</h3>
 		<div class="polosa"></div>
 		<img src="img/face.png">
 		<p>Хочу в очередной раз оставить тут слова благодарности Центру коррекционной и семейной психологии за слаженную работу и помощь детям с ОВЗ и их родителям! Каждый раз приезжая к вам, я вижу огромный скачок в развитии у своего ребёнка, благодаря профессионализму ваших сотрудников! </p>
 		<span class="name">Михаил,</span> <span>Ген директор ПАО "Газпром"</span>
-	</div>
+	</section>
 	
-
-	<div class="contact">
+	<footer class="contact">
 		<h3>Наши Контакты</h3>
 		<div class="polosa"></div>
 		<p>Администратор Центра компетентно ответит на все ваши вопросы и  предложит варианты решения проблемы</p>
@@ -212,6 +228,25 @@
 		<div class="copyright">
 			<p>Copyright 2021 Михаил Платонов. Design by Web</p>
 		</div>
+	
+	</footer>
+		<div class="preloader">
+	  <div class="preloader__row">
+	    <div class="preloader__item"></div>
+	    <div class="preloader__item"></div>
+	  </div>
 	</div>
+	
+	<script> window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+
+</main>
+
 </body>
 </html>
